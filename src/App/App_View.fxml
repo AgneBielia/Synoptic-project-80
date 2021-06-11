@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="CENTER" prefHeight="232.0" prefWidth="381.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.App_Controller">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" prefHeight="50.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" maxWidth="600.0" minWidth="400.0" />
+   </columnConstraints>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="212.0" text="Start your journey here!" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#signUp" prefHeight="30.0" prefWidth="170.0" text="Join" textAlignment="CENTER" GridPane.rowIndex="2" />
+      <Button onAction="#SignIn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="30.0" prefWidth="168.0" text="Sign in" textAlignment="CENTER" GridPane.rowIndex="4" />
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#signUpGuide" prefHeight="31.0" prefWidth="168.0" text="Join as a local guide" GridPane.rowIndex="3" />
+   </children>
+</GridPane>

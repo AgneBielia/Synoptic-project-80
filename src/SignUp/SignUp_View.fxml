@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="20" prefHeight="408.0" prefWidth="383.0" vgap="20" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUp.SignUp_Controller">
+   <padding><Insets bottom="10" left="25" right="25" top="10" /></padding>
+
+   <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+   <TextField fx:id="email" promptText="abc12xyz@email.co.uk" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+   <TextField fx:id="fname" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   <Label text="Surname:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+   <TextField fx:id="sname" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+   <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+   <Label text="Confirm Password:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+   <PasswordField fx:id="confirmPassword" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+   <Label fx:id="lbl_err" maxWidth="Infinity" style="-fx-text-fill: red;" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+
+   <Button maxWidth="Infinity" onAction="#createAccount" prefHeight="37.0" prefWidth="268.0" text="Create account" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+   <Button maxWidth="Infinity" onAction="#gotoFirstPage" prefHeight="41.0" prefWidth="268.0" text="Go back" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="8" />
+   <Label fx:id="title" alignment="CENTER" maxHeight="-Infinity" maxWidth="Infinity" prefHeight="17.0" prefWidth="144.0" text="Join as a tourist" GridPane.columnIndex="0" GridPane.columnSpan="2">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints maxHeight="12.0" minHeight="5.0" prefHeight="5.0" />
+      <RowConstraints maxHeight="37.0" minHeight="29.0" prefHeight="29.0" />
+      <RowConstraints maxHeight="33.0" minHeight="30.0" prefHeight="33.0" />
+   </rowConstraints>
+
+
+</GridPane>
