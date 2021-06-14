@@ -11,6 +11,7 @@ public class User {
     private final String sname;
     private String passwordHash;
     private String type;
+    private String bio;
 
     User(String email, String fname, String sname, String password) {
         this.fname = fname;
@@ -76,6 +77,10 @@ public class User {
     public void setType(String type) {
         this.type = type;
     }
+
+    public String getBio(){return this.bio;}
+    public void setBio(String bio){this.bio = bio;}
+
 
 //    public static void main(String[] args) {
 //        if (CreateAccountController.checkEmail("gae19jtu@")) {

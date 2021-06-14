@@ -12,9 +12,9 @@ public class SignUpModel {
     Connection c;
 
     public SignUpModel() {
-        this.dburl = "jdbc:postgresql://localhost:5432/synoptic_db";
+        this.dburl = "jdbc:postgresql://localhost:5432/syp";
         this.dbusername = "postgres";
-        this.dbpassword = "1password";
+        this.dbpassword = "help";
     }
 
     public static Connection Connect()
@@ -22,7 +22,7 @@ public class SignUpModel {
         Connection c = null;
         try{
             Class.forName("org.postgresql.Driver");
-             c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/synoptic_db", "postgres", "1password");
+             c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/syp", "postgres", "help");
             c.setAutoCommit(false);
         }
         catch (Exception exception)

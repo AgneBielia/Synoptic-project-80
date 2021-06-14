@@ -51,7 +51,7 @@ public class Login_Controller {
 
                 try {
                     logged_in_user = email.getText();
-                    Parent root = FXMLLoader.load(new URL("file:src/App/Homepage.fxml"));
+                    Parent root = FXMLLoader.load(new URL("file:src/Profile/ProfilePage.fxml"));
                     Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
                     Scene scene = new Scene(root);
                     stage.setScene(scene);
