@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Profile.ProfileController">
+   <children>
+      <Pane prefHeight="98.0" prefWidth="800.0" style="-fx-background-color: #5386E4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="9.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Profile">
+               <font>
+                  <Font name="Roboto Light" size="57.0" />
+               </font>
+            </Text>
+            <Button layoutX="348.0" layoutY="52.0" mnemonicParsing="false" text="Profile" />
+            <Button layoutX="412.0" layoutY="52.0" mnemonicParsing="false" text="Main" />
+            <Button layoutX="478.0" layoutY="52.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="542.0" layoutY="52.0" mnemonicParsing="false" text="Button" />
+         </children>
+      </Pane>
+      <Pane layoutX="30.0" layoutY="130.0" prefHeight="174.0" prefWidth="173.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="168.0" fitWidth="190.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@profilePic.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text layoutX="237.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font name="Roboto Light" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="436.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bio">
+         <font>
+            <Font name="Roboto Light" size="30.0" />
+         </font>
+      </Text>
+      <Line endX="386.0" layoutX="374.0" layoutY="235.0" startX="-154.0" />
+      <Text layoutX="239.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+         <font>
+            <Font name="Roboto Light" size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameTxt" layoutX="301.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailTxt" layoutX="301.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="bioTxt" layoutX="247.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIO HERE" wrappingWidth="377.978515625">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
