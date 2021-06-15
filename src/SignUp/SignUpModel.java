@@ -58,7 +58,6 @@ public class SignUpModel {
             statement.setString(5, user.getType());
             statement.execute();
             connection.close();
-
     }
 
     /**
