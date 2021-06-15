@@ -64,4 +64,31 @@ public class HomepageModel
             return null;
         }
     }
+    public static String isGuide(User user){
+
+        Statement select = null;
+        try
+        {
+            DBConnect();
+            select = c.createStatement();
+
+            ResultSet query_result = select.executeQuery("SELECT * FROM users WHERE email =" +"'"+user.getEmail()+"'"+ ";");
+            while(query_result.next())
+            {
+                String type = query_result.getString("user_type");
+                if(type.equals("G"))
+                    return "G";
+                else if(type.equals("T"))
+                    return "T";
+            }
+            query_result.close();
+            select.close();
+            c.close();
+            return " ";
+        } catch(Exception e) {
+            e.printStackTrace();
+            System.out.println("ERROR: Select operation failed.");
+            return null;
+        }
+    }
 }

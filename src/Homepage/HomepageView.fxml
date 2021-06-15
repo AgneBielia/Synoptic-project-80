@@ -15,10 +15,10 @@
                   <Font name="Roboto Light" size="57.0" />
                </font>
             </Text>
-            <Button fx:id="profileBtn" layoutX="348.0" layoutY="52.0" mnemonicParsing="false" text="Profile" onAction="#changeScene" />
-            <Button fx:id="mainBtn" layoutX="406.0" layoutY="52.0" mnemonicParsing="false" text="Main" onAction="#changeScene" />
-            <Button fx:id="helpBtn" layoutX="457.0" layoutY="52.0" mnemonicParsing="false" text="Help" onAction="#changeScene"/>
-            <Button fx:id="exitBtn" layoutX="723.0" layoutY="52.0" mnemonicParsing="false" text="Exit" onAction="#exit"/>
+            <Button fx:id="profileBtn" layoutX="348.0" layoutY="52.0" mnemonicParsing="false" onAction="#changeScene" text="Profile" />
+            <Button fx:id="mainBtn" layoutX="406.0" layoutY="52.0" mnemonicParsing="false" onAction="#changeScene" text="Main" />
+            <Button fx:id="helpBtn" layoutX="457.0" layoutY="52.0" mnemonicParsing="false" onAction="#changeScene" text="Help" />
+            <Button fx:id="exitBtn" layoutX="723.0" layoutY="52.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
          </children>
       </Pane>
       <Button fx:id="nextPgBtn" layoutX="433.0" layoutY="463.0" mnemonicParsing="false" onAction="#nextPage" text="Next Pg">
@@ -29,7 +29,7 @@
       <Button fx:id="prevPgBtn" layoutX="305.0" layoutY="462.0" mnemonicParsing="false" onAction="#prevPage" text="Prev Pg" />
       <Pane layoutX="41.0" layoutY="141.0" prefHeight="67.0" prefWidth="722.0" style="-fx-background-color: #5386E4;">
          <children>
-            <Text fx:id="title1Txt" fill="WHITE" layoutX="39.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title1">
+            <Text fx:id="title1Txt" fill="WHITE" layoutX="35.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title1">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
@@ -128,6 +128,6 @@
             <Font name="Roboto Light" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="addNewServiceButton" layoutX="41.0" layoutY="107.0" mnemonicParsing="false" onAction="#changeScene" text="Add a new Service" />
+      <Button fx:id="addNewServiceButton" layoutX="41.0" layoutY="107.0" mnemonicParsing="false" onAction="#changeScene" text="Add a new Service" visible="false" />
    </children>
 </AnchorPane>
