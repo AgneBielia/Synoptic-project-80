@@ -24,7 +24,7 @@ public class ProfileController
     @FXML
     public Button updateBioBtn,updateBtn,cancelBtn;
     public TextField bioTxtField;
-    public Button mainBtn;
+    public Button mainBtn,profileBtn,helpBtn;
 
     User loggedInUser;
 
@@ -83,11 +83,23 @@ public class ProfileController
     }
 
     public void changeScene(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(new URL("file:src/Homepage/HomepageView.fxml"));
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        String link;
+        try{
+            if(event.getSource() == mainBtn){
+                link = "file:src/Homepage/HomepageView.fxml";
+            }else if(event.getSource() == profileBtn){
+                link = "file:src/Profile/ProfilePage.fxml";
+            }else{
+                link = "";
+            }
+        }catch (Exception e){
+            System.out.println("page change failed");
+            link = "";
+        }
 
+        Parent root = FXMLLoader.load(new URL(link));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
-        stage.setTitle("Join as a Local Guide");
         stage.setScene(scene);
         stage.show();
     }

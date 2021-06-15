@@ -15,10 +15,10 @@
                   <Font name="Roboto Light" size="57.0" />
                </font>
             </Text>
-            <Button layoutX="348.0" layoutY="52.0" mnemonicParsing="false" text="Profile" />
-            <Button layoutX="406.0" layoutY="52.0" mnemonicParsing="false" text="Main" />
-            <Button layoutX="457.0" layoutY="52.0" mnemonicParsing="false" text="Help" />
-            <Button fx:id="exitBtn" layoutX="723.0" layoutY="52.0" mnemonicParsing="false" text="Exit" />
+            <Button fx:id="profileBtn" layoutX="348.0" layoutY="52.0" mnemonicParsing="false" text="Profile" onAction="#changeScene" />
+            <Button fx:id="mainBtn" layoutX="406.0" layoutY="52.0" mnemonicParsing="false" text="Main" onAction="#changeScene" />
+            <Button fx:id="helpBtn" layoutX="457.0" layoutY="52.0" mnemonicParsing="false" text="Help" onAction="#changeScene"/>
+            <Button fx:id="exitBtn" layoutX="723.0" layoutY="52.0" mnemonicParsing="false" text="Exit" onAction="#exit"/>
          </children>
       </Pane>
       <Button fx:id="nextPgBtn" layoutX="433.0" layoutY="463.0" mnemonicParsing="false" onAction="#nextPage" text="Next Pg">
@@ -128,5 +128,6 @@
             <Font name="Roboto Light" size="24.0" />
          </font>
       </Text>
+      <Button fx:id="addNewServiceButton" layoutX="41.0" layoutY="107.0" mnemonicParsing="false" onAction="#changeScene" text="Add a new Service" />
    </children>
 </AnchorPane>
