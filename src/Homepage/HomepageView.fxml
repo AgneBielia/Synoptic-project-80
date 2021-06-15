@@ -18,23 +18,23 @@
             <Button layoutX="348.0" layoutY="52.0" mnemonicParsing="false" text="Profile" />
             <Button layoutX="406.0" layoutY="52.0" mnemonicParsing="false" text="Main" />
             <Button layoutX="457.0" layoutY="52.0" mnemonicParsing="false" text="Help" />
-            <Button layoutX="723.0" layoutY="52.0" mnemonicParsing="false" text="Exit" />
+            <Button fx:id="exitBtn" layoutX="723.0" layoutY="52.0" mnemonicParsing="false" text="Exit" />
          </children>
       </Pane>
-      <Button layoutX="433.0" layoutY="463.0" mnemonicParsing="false" text="Next Pg">
+      <Button fx:id="nextPgBtn" layoutX="433.0" layoutY="463.0" mnemonicParsing="false" onAction="#nextPage" text="Next Pg">
          <font>
             <Font name="Roboto Light" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="305.0" layoutY="462.0" mnemonicParsing="false" text="Prev Pg" />
+      <Button fx:id="prevPgBtn" layoutX="305.0" layoutY="462.0" mnemonicParsing="false" onAction="#prevPage" text="Prev Pg" />
       <Pane layoutX="41.0" layoutY="141.0" prefHeight="67.0" prefWidth="722.0" style="-fx-background-color: #5386E4;">
          <children>
-            <Text fx:id="Title1Txt" fill="WHITE" layoutX="39.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title1">
+            <Text fx:id="title1Txt" fill="WHITE" layoutX="39.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title1">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
-            <Text fx:id="Desc1Txt" fill="WHITE" layoutX="171.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc1" wrappingWidth="218.6884765625">
+            <Text fx:id="desc1Txt" fill="WHITE" layoutX="171.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc1" wrappingWidth="218.6884765625">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
@@ -53,12 +53,12 @@
       </Pane>
       <Pane layoutX="41.0" layoutY="217.0" prefHeight="67.0" prefWidth="722.0" style="-fx-background-color: #5386E4;">
          <children>
-            <Text fx:id="Title2Txt" fill="WHITE" layoutX="32.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title2">
+            <Text fx:id="title2Txt" fill="WHITE" layoutX="32.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title2">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
-            <Text fx:id="Desc2Txt" fill="WHITE" layoutX="169.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc2" wrappingWidth="218.6884765625">
+            <Text fx:id="desc2Txt" fill="WHITE" layoutX="169.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc2" wrappingWidth="218.6884765625">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
@@ -77,12 +77,12 @@
       </Pane>
       <Pane layoutX="41.0" layoutY="297.0" prefHeight="67.0" prefWidth="722.0" style="-fx-background-color: #5386E4;">
          <children>
-            <Text fx:id="Title3Txt" fill="WHITE" layoutX="27.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title3">
+            <Text fx:id="title3Txt" fill="WHITE" layoutX="27.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title3">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
-            <Text fx:id="Desc3Txt" fill="WHITE" layoutX="168.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc3" wrappingWidth="247.41552734375">
+            <Text fx:id="desc3Txt" fill="WHITE" layoutX="168.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc3" wrappingWidth="247.41552734375">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
@@ -101,12 +101,12 @@
       </Pane>
       <Pane layoutX="41.0" layoutY="375.0" prefHeight="67.0" prefWidth="722.0" style="-fx-background-color: #5386E4;">
          <children>
-            <Text fx:id="Title4Txt" fill="WHITE" layoutX="26.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title4">
+            <Text fx:id="title4Txt" fill="WHITE" layoutX="26.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title4">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
-            <Text fx:id="Desc4Txt" fill="WHITE" layoutX="168.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc4" wrappingWidth="256.41552734375">
+            <Text fx:id="desc4Txt" fill="WHITE" layoutX="168.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desc4" wrappingWidth="256.41552734375">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>

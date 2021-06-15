@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 public class HomepageModel
@@ -31,15 +32,15 @@ public class HomepageModel
      * I dont know howim doing main page yet
      * @return
      */
-    public List<Service> getServices(){
+    public static ArrayList<Service> getServices(){
         Statement select = null;
-        List<Service> services = FXCollections.observableArrayList();
+        ArrayList<Service> services = new ArrayList<>();
         try
         {
             DBConnect();
             select = c.createStatement();
 
-            ResultSet query_result = select.executeQuery("SELECT * FROM services;");
+            ResultSet query_result = select.executeQuery("SELECT * FROM service;");
 
             while(query_result.next())
             {
@@ -56,7 +57,7 @@ public class HomepageModel
             select.close();
             c.close();
             System.out.println("Select operation successful.");
-            return  services;
+            return services;
         } catch(Exception e) {
             e.printStackTrace();
             System.out.println("ERROR: Select operation failed.");

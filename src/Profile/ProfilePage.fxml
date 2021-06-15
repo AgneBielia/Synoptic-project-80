@@ -20,7 +20,7 @@
                </font>
             </Text>
             <Button layoutX="348.0" layoutY="52.0" mnemonicParsing="false" text="Profile" />
-            <Button layoutX="412.0" layoutY="52.0" mnemonicParsing="false" text="Main" />
+            <Button fx:id="mainBtn" layoutX="412.0" layoutY="52.0" mnemonicParsing="false" onAction="#changeScene" text="Main" />
             <Button layoutX="478.0" layoutY="52.0" mnemonicParsing="false" text="Button" />
             <Button layoutX="542.0" layoutY="52.0" mnemonicParsing="false" text="Button" />
          </children>
@@ -67,7 +67,7 @@
       </Text>
       <Button fx:id="updateBioBtn" layoutX="400.0" layoutY="392.0" mnemonicParsing="false" onAction="#changeBio" text="Update Bio" />
       <TextField fx:id="bioTxtField" layoutX="249.0" layoutY="360.0" prefHeight="98.0" prefWidth="405.0" promptText="Enter New Bio Here" visible="false" />
-      <Button fx:id="updateBtn" layoutX="448.0" layoutY="458.0" onAction="#updateBio" mnemonicParsing="false" text="update" visible="false" />
-      <Button fx:id="cancelBtn" layoutX="384.0" layoutY="458.0" onAction="#cancelUpdate" mnemonicParsing="false" text="cancel" visible="false" />
+      <Button fx:id="updateBtn" layoutX="448.0" layoutY="458.0" mnemonicParsing="false" onAction="#updateBio" text="update" visible="false" />
+      <Button fx:id="cancelBtn" layoutX="384.0" layoutY="458.0" mnemonicParsing="false" onAction="#cancelUpdate" text="cancel" visible="false" />
    </children>
 </AnchorPane>
