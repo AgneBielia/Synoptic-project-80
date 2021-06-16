@@ -115,30 +115,28 @@ public class HomepageController
             }
         }
     }
-    public void changeScene(ActionEvent event) throws IOException {
-        String link;
-        try{
-            if(event.getSource() == mainBtn){
-                link = "file:src/Homepage/HomepageView.fxml";
-            }else if(event.getSource() == profileBtn){
-                link = "file:src/Profile/ProfilePage.fxml";
-            }else if(event.getSource()== addNewServiceButton){
-                link = "file:src/Profile/AddServiceView.fxml";
-            }else{
-                link = "";
-            }
-        }catch (Exception e){
-            System.out.println("page change failed");
-            link = "";
-        }
 
-        Parent root = FXMLLoader.load(new URL(link));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-    public void exit(ActionEvent event){
-        System.exit(0);
-    }
+   public void changeScene(ActionEvent event) throws IOException {
+       String link = null;
+       try{
+           if(event.getSource() == mainBtn){
+               link = "file:src/Homepage/HomepageView.fxml";
+           }else if(event.getSource() == profileBtn){
+               link = "file:src/Profile/ProfilePage.fxml";
+           }else if(event.getSource() == addNewServiceButton){
+               link = "file:src/Homepage/AddServiceView.fxml";
+           }
+       }catch (Exception e){
+           System.out.println("page change failed");
+           link = "";
+       }
+       Parent root = FXMLLoader.load(new URL(link));
+       Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+       Scene scene = new Scene(root);
+       stage.setScene(scene);
+       stage.show();
+   }
+
+   //exit
+   public void exit(ActionEvent event){ System.exit(0); }
 }

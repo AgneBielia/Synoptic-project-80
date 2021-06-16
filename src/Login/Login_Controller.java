@@ -41,17 +41,15 @@ public class Login_Controller {
             lbl_err.setText("Password too short");
         }
         else{
-
             for (Node e : txt_elements) {
                 e.setStyle("-fx-text-inner-color: black;");
             }
             lbl_err.setText("");
             try {
                 logged_in_user_t = db.getUser(email.getText(), password.getText());
-
                 try {
                     logged_in_user = email.getText();
-                    Parent root = FXMLLoader.load(new URL("file:src/Profile/ProfilePage.fxml"));
+                    Parent root = FXMLLoader.load(new URL("file:src/Homepage/HomepageView.fxml"));
                     Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
                     Scene scene = new Scene(root);
                     stage.setScene(scene);
@@ -63,14 +61,12 @@ public class Login_Controller {
                     e.setStyle("-fx-text-inner-color: black;");
                 }
                 lbl_err.setText("");
-
             } catch (SignUpModel.UserNotFoundException e) {
                 lbl_err.setText(e.getMessage());
             } catch (SignUpModel.UserLockedOutException e) {
                 lbl_err.setText("User is locked out\nContact an administrator");
             } catch (SignUpModel.IncorrectPasswordException e) {
                 lbl_err.setText(e.getMessage());
-
             } catch (SQLException e) {
                 lbl_err.setText(e.getMessage());
             }

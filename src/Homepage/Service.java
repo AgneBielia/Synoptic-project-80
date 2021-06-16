@@ -21,6 +21,14 @@ public class Service
         this.unique_id    = unique_id;
         this.author_email = author_email;
     }
+    public Service(String title,int cost,String location,String description,String author_email)
+    {
+        this.title        = title;
+        this.cost         = cost;
+        this.location     = location;
+        this.description  = description;
+        this.author_email = author_email;
+    }
 
     public void setTitle(String title)              {this.title=title;}
     public void setCost(int cost)                   {this.cost=cost;}

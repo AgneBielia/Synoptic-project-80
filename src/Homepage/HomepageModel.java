@@ -91,4 +91,33 @@ public class HomepageModel
             return null;
         }
     }
+    public static void insertService(User user,Service service){
+        Statement insert = null;
+
+        String title = service.getTitle();
+        String desc = service.getDescription();
+        int cost = service.getCost();
+        String location = service.getLocation();
+        String author = user.getEmail();
+
+        try
+        {
+            DBConnect();
+            insert = c.createStatement();
+
+            String statement = "INSERT INTO service (title, cost, location, description, author_email" +
+                    ")VALUES("+"'"+ title + "', " + cost + ", '" + location + "','" + desc + "' , '" +
+                    author + "'" + ");";
+
+            insert.executeUpdate(statement);
+
+            insert.close();
+            c.commit();
+            c.close();
+        } catch(Exception e) {
+            e.printStackTrace();
+            System.out.println("ERROR: Insert operation failed.");
+        }
+        System.out.println("Insert operation successful.");
+    }
 }

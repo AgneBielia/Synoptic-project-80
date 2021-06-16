@@ -33,7 +33,7 @@ public class ProfileController
     }
 
 
-    /***
+    /**
      * loads logged in users information
      */
     public void profileInit(){
