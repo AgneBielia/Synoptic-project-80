@@ -44,11 +44,16 @@
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
-            <Text fx:id="cost1Txt" fill="WHITE" layoutX="595.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cost1">
+            <Text fx:id="cost1Txt" fill="WHITE" layoutX="566.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cost1">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
+            <Button fx:id="moreBtn1" layoutX="643.0" layoutY="17.0" mnemonicParsing="false" text="more">
+               <font>
+                  <Font name="Roboto Light" size="13.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <Pane layoutX="41.0" layoutY="217.0" prefHeight="67.0" prefWidth="722.0" style="-fx-background-color: #5386E4;">
@@ -68,11 +73,16 @@
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
-            <Text fx:id="cost2Txt" fill="WHITE" layoutX="596.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cost2">
+            <Text fx:id="cost2Txt" fill="WHITE" layoutX="565.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cost2">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
+            <Button fx:id="moreBtn2" layoutX="642.0" layoutY="21.0" mnemonicParsing="false" text="more">
+               <font>
+                  <Font name="Roboto Light" size="13.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <Pane layoutX="41.0" layoutY="297.0" prefHeight="67.0" prefWidth="722.0" style="-fx-background-color: #5386E4;">
@@ -92,11 +102,16 @@
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
-            <Text fx:id="cost3Txt" fill="WHITE" layoutX="594.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cost3">
+            <Text fx:id="cost3Txt" fill="WHITE" layoutX="563.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cost3">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
+            <Button fx:id="moreBtn3" layoutX="644.0" layoutY="21.0" mnemonicParsing="false" text="more">
+               <font>
+                  <Font name="Roboto Light" size="13.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <Pane layoutX="41.0" layoutY="375.0" prefHeight="67.0" prefWidth="722.0" style="-fx-background-color: #5386E4;">
@@ -116,11 +131,16 @@
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
-            <Text fx:id="cost4Txt" fill="WHITE" layoutX="593.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cost4">
+            <Text fx:id="cost4Txt" fill="WHITE" layoutX="561.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cost4">
                <font>
                   <Font name="Roboto Light" size="21.0" />
                </font>
             </Text>
+            <Button fx:id="moreBtn4" layoutX="644.0" layoutY="21.0" mnemonicParsing="false" text="more">
+               <font>
+                  <Font name="Roboto Light" size="13.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <Text layoutX="361.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Services">

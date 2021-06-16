@@ -85,13 +85,15 @@ public class ProfileController
     public void changeScene(ActionEvent event) throws IOException {
         String link;
         try{
-            if(event.getSource() == mainBtn){
+            if(event.getSource() == mainBtn)
                 link = "file:src/Homepage/HomepageView.fxml";
-            }else if(event.getSource() == profileBtn){
+            else if(event.getSource() == profileBtn)
                 link = "file:src/Profile/ProfilePage.fxml";
-            }else{
+            else if(event.getSource() == helpBtn)
+                link = "file:src/Help/HelpView.fxml";
+            else
                 link = "";
-            }
+
         }catch (Exception e){
             System.out.println("page change failed");
             link = "";
