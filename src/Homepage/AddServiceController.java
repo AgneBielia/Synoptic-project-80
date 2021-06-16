@@ -14,6 +14,10 @@ import javafx.scene.text.Text;
 import javafx.event.ActionEvent;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class AddServiceController {
 
     @FXML
@@ -21,17 +25,20 @@ public class AddServiceController {
     @FXML
     public Button cancelBtn,submitBtn;
 
-    public void initialise(){
-
-    }
-
-    public void submit(ActionEvent event){
+    public void submit(ActionEvent event) throws IOException {
         User loggedInUser = Login_Controller.logged_in_user_t;
         Service service = new Service(titleTxtBox.getText(),Integer.parseInt(costTxtBox.getText()),
                 locationTxtBox.getText(),descTxtBox.getText(),loggedInUser.getEmail());
         HomepageModel.insertService(loggedInUser,service);
+        back(event);
     }
-    public void cancel(ActionEvent event){
-
+    public void back(ActionEvent event) throws IOException {
+        String link = null;
+        link = "file:src/Homepage/HomepageView.fxml";
+        Parent root = FXMLLoader.load(new URL(link));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 }
