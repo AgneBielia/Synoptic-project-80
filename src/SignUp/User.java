@@ -13,7 +13,7 @@ public class User {
     private String type;
     private String bio;
 
-    User(String email, String fname, String sname, String password) {
+    public User(String email, String fname, String sname, String password) {
         this.fname = fname;
         this.sname = sname;
         this.email = email;
@@ -21,7 +21,7 @@ public class User {
         this.type = App_Controller.type;
     }
 
-    User(String email, String fname, String sname) {
+    public User(String email, String fname, String sname) {
         this.fname = fname;
         this.sname = sname;
         this.email = email;

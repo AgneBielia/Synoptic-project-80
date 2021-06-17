@@ -42,4 +42,28 @@ public class ProfileModel {
         }
         System.out.println("Update operation successful.");
     }
+
+    public static String loadBio(User user){
+
+        Statement select = null;
+        try
+        {
+            DBConnect();
+            select = c.createStatement();
+
+            //ResultSet query_result = select.executeQuery();
+            ResultSet query_result = select.executeQuery("SELECT * FROM users WHERE email =" +"'"+user.getEmail()+"'"+ ";");
+            while(query_result.next())
+                return query_result.getString("bio");
+
+            query_result.close();
+            select.close();
+            c.close();
+            return " ";
+        } catch(Exception e) {
+            e.printStackTrace();
+            System.out.println("ERROR: Select operation failed.");
+            return null;
+        }
+    }
 }

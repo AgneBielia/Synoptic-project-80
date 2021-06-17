@@ -9,6 +9,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
+import SignUp.User;
 import java.util.List;
 
 public class HomepageModel
@@ -91,6 +92,35 @@ public class HomepageModel
             return null;
         }
     }
+    public static User findAuthor(String string){
+        Statement select = null;
+        try
+        {
+            DBConnect();
+            select = c.createStatement();
+            System.out.println(string);
+            ResultSet query_result = select.executeQuery("SELECT * FROM users WHERE email =" +"'"+string+"'"+ ";");
+
+            while(query_result.next())
+            {
+                String email = query_result.getString("email");
+                String firstname = query_result.getString("firstname");
+                String surname = query_result.getString("surname");
+                System.out.println(email);
+                return new User(email,firstname,surname);
+            }
+            query_result.close();
+            select.close();
+            c.close();
+        } catch(Exception e) {
+            e.printStackTrace();
+            System.out.println("ERROR: Select operation failed.");
+            return null;
+        }
+        return null;
+    }
+
+
     public static void insertService(User user,Service service){
         Statement insert = null;
 
@@ -120,4 +150,28 @@ public class HomepageModel
         }
         System.out.println("Insert operation successful.");
     }
+    public static String loadBio(User user){
+
+        Statement select = null;
+        try
+        {
+            DBConnect();
+            select = c.createStatement();
+
+            //ResultSet query_result = select.executeQuery();
+            ResultSet query_result = select.executeQuery("SELECT * FROM users WHERE email =" +"'"+user.getEmail()+"'"+ ";");
+            while(query_result.next())
+                return query_result.getString("bio");
+
+            query_result.close();
+            select.close();
+            c.close();
+            return " ";
+        } catch(Exception e) {
+            e.printStackTrace();
+            System.out.println("ERROR: Select operation failed.");
+            return null;
+        }
+    }
+
 }

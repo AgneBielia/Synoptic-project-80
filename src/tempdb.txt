@@ -30,6 +30,9 @@ CREATE TABLE service
 	description varchar(50) not null,
 	author_email varchar(50) not null
 )
+
+INSERT into service VALUES (1,'eco-tour',5,'Lobitos','Tours in Lobitos','b@b.com');
+
 INSERT into service VALUES (1,'1',1,'1','1','1');
 INSERT into service VALUES (2,'2',2,'2','2','2');
 INSERT into service VALUES (3,'3',3,'3','3','3');
@@ -47,9 +50,3 @@ INSERT into service VALUES (12,'12',12,'12','12','12');
 INSERT into service VALUES (13,'13',13,'13','13','13');
 INSERT into service VALUES (14,'14',14,'14','14','14');
 INSERT into service VALUES (15,'15',15,'15','15','15');
-
-
-
-
-
-

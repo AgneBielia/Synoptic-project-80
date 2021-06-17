@@ -23,36 +23,42 @@
       </Pane>
       <Pane layoutX="32.0" layoutY="132.0" prefHeight="159.0" prefWidth="363.0" style="-fx-background-color: #5386E4;">
          <children>
-            <Text fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+            <Text fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apps Purpose">
                <font>
                   <Font name="Roboto Light" size="42.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="37.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Roboto Light" size="30.0" />
                </font>
             </Text>
          </children>
       </Pane>
       <Pane layoutX="411.0" layoutY="132.0" prefHeight="159.0" prefWidth="363.0" style="-fx-background-color: #5386E4;">
          <children>
-            <Text fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+            <Text fill="WHITE" layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Page">
                <font>
                   <Font name="Roboto Light" size="42.0" />
                </font>
             </Text>
-         </children>
-      </Pane>
-      <Pane layoutX="32.0" layoutY="317.0" prefHeight="159.0" prefWidth="363.0" style="-fx-background-color: #5386E4;">
-         <children>
-            <Text fill="WHITE" layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+            <Text fill="WHITE" layoutX="35.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
                <font>
-                  <Font name="Roboto Light" size="42.0" />
+                  <Font name="Roboto Light" size="30.0" />
                </font>
             </Text>
          </children>
       </Pane>
-      <Pane layoutX="411.0" layoutY="317.0" prefHeight="159.0" prefWidth="363.0" style="-fx-background-color: #5386E4;">
+      <Pane layoutX="219.0" layoutY="312.0" prefHeight="159.0" prefWidth="363.0" style="-fx-background-color: #5386E4;">
          <children>
-            <Text fill="WHITE" layoutX="11.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+            <Text fill="WHITE" layoutX="14.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
                <font>
                   <Font name="Roboto Light" size="42.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="36.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <font>
+                  <Font name="Roboto Light" size="30.0" />
                </font>
             </Text>
          </children>

@@ -41,7 +41,7 @@ public class ProfileController
             loggedInUser = Login_Controller.logged_in_user_t;
             nameTxt.setText (loggedInUser.getFname() + " " + loggedInUser.getSname());
             emailTxt.setText(loggedInUser.getEmail());
-            bioTxt.setText  (loggedInUser.getBio());
+            bioTxt.setText  (ProfileModel.loadBio(loggedInUser));
         }catch (Exception e){
             System.out.println("User does not exist");
         }
