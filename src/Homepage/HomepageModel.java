@@ -30,8 +30,7 @@ public class HomepageModel
 
     /***
      * Returns a list of all services
-     * I dont know howim doing main page yet
-     * @return
+     * @return arraylist of all services
      */
     public static ArrayList<Service> getServices(){
         Statement select = null;
@@ -65,6 +64,12 @@ public class HomepageModel
             return null;
         }
     }
+
+    /**
+     * checks whether user is guide returns g/t
+     * @param user
+     * @return
+     */
     public static String isGuide(User user){
 
         Statement select = null;
@@ -92,6 +97,12 @@ public class HomepageModel
             return null;
         }
     }
+
+    /**
+     * finds an author for selected service
+     * @param string
+     * @return
+     */
     public static User findAuthor(String string){
         Statement select = null;
         try
@@ -120,7 +131,11 @@ public class HomepageModel
         return null;
     }
 
-
+    /**
+     * creates a service entry
+     * @param user
+     * @param service
+     */
     public static void insertService(User user,Service service){
         Statement insert = null;
 
@@ -150,6 +165,12 @@ public class HomepageModel
         }
         System.out.println("Insert operation successful.");
     }
+
+    /**
+     * returns the bio for select user
+     * @param user
+     * @return
+     */
     public static String loadBio(User user){
 
         Statement select = null;

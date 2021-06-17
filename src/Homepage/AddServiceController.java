@@ -25,6 +25,9 @@ public class AddServiceController {
     @FXML
     public Button cancelBtn,submitBtn;
 
+    /*
+    Submits the service
+     */
     public void submit(ActionEvent event) throws IOException {
         User loggedInUser = Login_Controller.logged_in_user_t;
         Service service = new Service(titleTxtBox.getText(),Integer.parseInt(costTxtBox.getText()),
@@ -32,6 +35,9 @@ public class AddServiceController {
         HomepageModel.insertService(loggedInUser,service);
         back(event);
     }
+    /*
+    return to main
+     */
     public void back(ActionEvent event) throws IOException {
         String link = null;
         link = "file:src/Homepage/HomepageView.fxml";

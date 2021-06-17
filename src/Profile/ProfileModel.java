@@ -22,6 +22,12 @@ public class ProfileModel {
         }
         System.out.println("Connected to DB successfully.");
     }
+
+    /**
+     * updates users bio in database
+     * @param user
+     * @param newBio
+     */
     public static void updateBio(User user, String newBio)
     {
         Statement update = null;
@@ -43,6 +49,11 @@ public class ProfileModel {
         System.out.println("Update operation successful.");
     }
 
+    /**
+     * returns string of users bio
+     * @param user
+     * @return
+     */
     public static String loadBio(User user){
 
         Statement select = null;
